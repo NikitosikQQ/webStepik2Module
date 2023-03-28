@@ -22,7 +22,7 @@ public class SignInServlet extends HttpServlet {
         String login = request.getParameter("login");
         String pass = request.getParameter("password");
 
-        if (login.equals("") || pass.equals("") ){
+        if (login == null || pass == null || login.equals("") || pass.equals("")) {
             response.setContentType("text/html;charset=utf-8");
             response.getWriter().println("Некорректный запрос!");
             response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
