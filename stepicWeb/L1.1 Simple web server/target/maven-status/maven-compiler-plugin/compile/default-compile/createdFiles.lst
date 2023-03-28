@@ -1,0 +1,6 @@
+servlets\SignUpServlet.class
+servlets\SignInServlet.class
+accounts\AccountService.class
+main\Main.class
+accounts\UserProfile.class
+servlets\SessionsServlet.class
